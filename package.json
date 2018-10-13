@@ -21,7 +21,8 @@
     "testEnvironment": "node"
   },
   "dependencies": {
-    "vue-loader": "^15.4.2"
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17"
   },
   "devDependencies": {
     "jest-cli": "^22.1.4",
@@ -38,6 +39,7 @@
   },
   "peerDependencies": {
     "umi": "2",
-    "webpack": "4"
+    "webpack": "4",
+    "vue": "^2.5.17"
   }
 }
