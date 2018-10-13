@@ -32,5 +32,8 @@
     "envs": [
       "jest"
     ]
+  },
+  "peerDependencies": {
+    "umi": ">=2"
   }
 }
