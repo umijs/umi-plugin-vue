@@ -1,22 +1,34 @@
-
 # umi-plugin-vue
 
 [![NPM version](https://img.shields.io/npm/v/umi-plugin-vue.svg?style=flat)](https://npmjs.com/package/umi-plugin-vue) [![NPM downloads](https://img.shields.io/npm/dm/umi-plugin-vue.svg?style=flat)](https://npmjs.com/package/umi-plugin-vue)  [![CircleCI](https://circleci.com/gh/ulivz/umi-plugin-vue/tree/master.svg?style=shield)](https://circleci.com/gh/ulivz/umi-plugin-vue/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/ulivz/donate)
 
+## Why?
+
+- Powerful Vue [SFC](https://vue-loader.vuejs.org/spec.html) build ecosystem integration.
+- Maintained by the team member of Vue.js.
+
 ## Install
 
 ```bash
-yarn add umi-plugin-vue
+yarn add umi-plugin-vue -D
 ```
 
 ## Usage
 
 ```js
-const umiPluginVue = require('umi-plugin-vue')
-
-umiPluginVue()
-//=> foo
+// .umirc.js or config/config.js
+module.exports = {
+  plugins: ['vue']
+};
 ```
+
+For more information of Umi plugin usage, please refer to [Umi > Plugin Usage](https://umijs.org/plugin/#plugin-usage).
+
+## TODO
+
+- Router generator.
+- Integrate with [Vuex](https://vuex.vuejs.org/).
+- TypeScript support.
 
 ## Contributing
 
