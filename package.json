@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "test": "npm run lint && jest",
-    "lint": "xo"
+    "lint": "xo",
+    "release": "release-it"
   },
   "author": "ulivz <chl814@foxmail.com>",
   "license": "MIT",
