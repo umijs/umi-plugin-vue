@@ -2,10 +2,9 @@
 
 [![npm version](https://badgen.net/npm/v/umi-plugin-vue)](https://npm.im/umi-plugin-vue) [![build status](https://badgen.net/circleci/github/ulivz/umi-plugin-vue/master)](https://circleci.com/gh/ulivz/umi-plugin-vue/tree/master) [![npm downloads](https://badgen.net/npm/dm/umi-plugin-vue)](https://npm.im/umi-plugin-vue)
 
-## Why?
+## Features
 
 - Powerful Vue [SFC](https://vue-loader.vuejs.org/spec.html) build ecosystem integration.
-- Authored and maintained by a team member of Vue.js.
 
 ## Install
 
@@ -18,7 +17,7 @@ yarn add umi-plugin-vue -D
 ```js
 // .umirc.js or config/config.js
 module.exports = {
-  plugins: ['vue']
+  plugins: ['umi-plugin-vue']
 };
 ```
 
@@ -26,6 +25,7 @@ For more information of Umi plugin usage, please refer to [Umi > Plugin Usage](h
 
 ## TODO
 
+- Hot-reload styles in Vue SFC.
 - Router generator.
 - Integrate with [Vuex](https://vuex.vuejs.org/).
 - TypeScript support.
