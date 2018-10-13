@@ -1,11 +1,11 @@
-const { VueLoaderPlugin } = require('vue-loader');
+const { VueLoaderPlugin } = require('vue-loader')
 
 module.exports = (api, opts = {}) => {
   const { vueLoaderOptions = {} } = opts
   api.chainWebpackConfig(config => {
     const rule = config.module
       .rule('vue')
-      .test(/\.vue$/);
+      .test(/\.vue$/)
 
     rule
       .use('vue-loader')
@@ -14,7 +14,7 @@ module.exports = (api, opts = {}) => {
           compilerOptions: {
             preserveWhitespace: true
           }
-        }));
+        }))
 
     config
       .resolve
@@ -23,12 +23,12 @@ module.exports = (api, opts = {}) => {
 
     config
       .plugin('vue-loader')
-        .use(VueLoaderPlugin);
+        .use(VueLoaderPlugin)
   })
 
   api.modifyDefaultConfig(memo => {
     return Object.assign(memo, {
-      urlLoaderExcludes: [/\.vue$/],
-    });
-  });
+      urlLoaderExcludes: [/\.vue$/]
+    })
+  })
 }
