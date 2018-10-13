@@ -36,6 +36,7 @@
     ]
   },
   "peerDependencies": {
-    "umi": ">=2"
+    "umi": "2",
+    "webpack": "4"
   }
 }
