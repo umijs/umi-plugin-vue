@@ -1,6 +1,6 @@
 # umi-plugin-vue
 
-[![NPM version](https://img.shields.io/npm/v/umi-plugin-vue.svg?style=flat)](https://npmjs.com/package/umi-plugin-vue) [![NPM downloads](https://img.shields.io/npm/dm/umi-plugin-vue.svg?style=flat)](https://npmjs.com/package/umi-plugin-vue)  [![CircleCI](https://circleci.com/gh/ulivz/umi-plugin-vue/tree/master.svg?style=shield)](https://circleci.com/gh/ulivz/umi-plugin-vue/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/ulivz/donate)
+[![npm version](https://badgen.net/npm/v/umi-plugin-vue)](https://npm.im/umi-plugin-vue) [![build status](https://badgen.net/circleci/github/ulivz/umi-plugin-vue/master)](https://circleci.com/gh/ulivz/umi-plugin-vue/tree/master) [![npm downloads](https://badgen.net/npm/dm/umi-plugin-vue)](https://npm.im/umi-plugin-vue)
 
 ## Why?
 
