@@ -25,7 +25,9 @@
   "devDependencies": {
     "jest-cli": "^22.1.4",
     "eslint-config-rem": "^3.0.0",
-    "xo": "^0.18.0"
+    "xo": "^0.18.0",
+    "release-it": "v7.4.8",
+    "conventional-changelog-cli": "^2.0.1"
   },
   "xo": {
     "extends": "rem",
