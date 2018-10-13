@@ -5,7 +5,7 @@
 ## Why?
 
 - Powerful Vue [SFC](https://vue-loader.vuejs.org/spec.html) build ecosystem integration.
-- Maintained by the team member of Vue.js.
+- Authored and maintained by a team member of Vue.js.
 
 ## Install
 
