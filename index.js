@@ -1,5 +1,3 @@
-const { VueLoaderPlugin } = require('vue-loader')
-
 module.exports = (api, opts = {}) => {
   const { vueLoaderOptions = {} } = opts
   api.chainWebpackConfig(config => {
@@ -23,7 +21,7 @@ module.exports = (api, opts = {}) => {
 
     config
       .plugin('vue-loader')
-        .use(VueLoaderPlugin)
+        .use(require('vue-loader').VueLoaderPlugin)
   })
 
   api.modifyDefaultConfig(memo => {
