@@ -18,7 +18,7 @@ module.exports = (api, opts = {}) => {
   Object.keys(plugins).forEach(key => {
     const id = getId(key)
     if (opts[key]) {
-      const pluginOptions = opts[key] === true
+      const pluginOptions = typeof opts[key] === 'object'
         ? opts[key]
         : {}
       debug(`Enable ${id} with options ${JSON.stringify(pluginOptions)}`)
