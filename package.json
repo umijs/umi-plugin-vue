@@ -24,7 +24,10 @@
     "vue": "^2.5.20",
     "vue-loader": "^15.4.2",
     "vue-template-compiler": "^2.5.20",
-    "globby": "^8.0.1"
+    "globby": "^8.0.1",
+    "chokidar": "^2.0.4",
+    "chalk": "^2.4.1",
+    "debug": "^4.1.0"
   },
   "devDependencies": {
     "jest-cli": "^22.1.4",
