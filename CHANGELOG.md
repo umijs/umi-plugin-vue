@@ -1,3 +1,13 @@
+<a name="0.3.1"></a>
+## [0.3.1](https://github.com/ulivz/umi-plugin-vue/compare/v0.3.0...v0.3.1) (2018-12-10)
+
+
+### Bug Fixes
+
+* missing lib ([e6c4962](https://github.com/ulivz/umi-plugin-vue/commit/e6c4962))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/ulivz/umi-plugin-vue/compare/v0.2.0...v0.3.0) (2018-12-10)
 
