@@ -1,3 +1,13 @@
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/ulivz/umi-plugin-vue/compare/v0.3.1...v0.3.2) (2018-12-10)
+
+
+### Bug Fixes
+
+* low-level error ([bdf4eda](https://github.com/ulivz/umi-plugin-vue/commit/bdf4eda))
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/ulivz/umi-plugin-vue/compare/v0.3.0...v0.3.1) (2018-12-10)
 
