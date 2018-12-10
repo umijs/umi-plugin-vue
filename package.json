@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-vue",
-  "version": "0.2.0",
+  "version": "0.10.0",
   "description": "A umi@2.x plugin for Vue.js",
   "repository": {
     "url": "ulivz/umi-plugin-vue",
@@ -21,8 +21,10 @@
     "testEnvironment": "node"
   },
   "dependencies": {
+    "vue": "^2.5.20",
     "vue-loader": "^15.4.2",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.20",
+    "globby": "^8.0.1"
   },
   "devDependencies": {
     "jest-cli": "^22.1.4",
@@ -35,11 +37,14 @@
     "extends": "rem",
     "envs": [
       "jest"
-    ]
+    ],
+    "rules": {
+      "unicorn/filename-case": "off"
+    }
   },
   "peerDependencies": {
     "umi": "2",
     "webpack": "4",
-    "vue": "^2.5.17"
+    "vue": "^2.5.20"
   }
 }

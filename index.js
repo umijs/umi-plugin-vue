@@ -1,32 +1,34 @@
+const debug = require('debug')('umi-plugin-vue')
+
+function getId(id) {
+  return `umi-plugin-vue:${id}`;
+}
+
 module.exports = (api, opts = {}) => {
-  const { vueLoaderOptions = {} } = opts
-  api.chainWebpackConfig(config => {
-    const rule = config.module
-      .rule('vue')
-      .test(/\.vue$/)
+  opts = Object.assign({
+    sfc: {}
+  }, opts)
 
-    rule
-      .use('vue-loader')
-        .loader('vue-loader')
-        .options(Object.assign(vueLoaderOptions, {
-          compilerOptions: {
-            preserveWhitespace: true
-          }
-        }))
+  const plugins = {
+    sfc: () => require('./lib/umi-plugin-vue-sfc'),
+    router: () => require('./lib/umi-plugin-vue-external'),
+    external: () => require('./lib/umi-plugin-vue-router'),
+  }
 
-    config
-      .resolve
-        .extensions
-          .merge(['.vue'])
-
-    config
-      .plugin('vue-loader')
-        .use(require('vue-loader').VueLoaderPlugin)
-  })
-
-  api.modifyDefaultConfig(memo => {
-    return Object.assign(memo, {
-      urlLoaderExcludes: [/\.vue$/]
-    })
-  })
+  Object.keys(plugins).forEach(key => {
+    const id = getId(key)
+    if (opts[key]) {
+      const pluginOptions = opts[key] === true
+        ? opts[key]
+        : {}
+      debug(`Enable ${id}`)
+      api.registerPlugin({
+        id,
+        apply: plugins[key](),
+        opts: pluginOptions,
+      });
+    } else {
+      debug(`Disable ${id}`)
+    }
+  });
 }
