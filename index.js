@@ -11,8 +11,8 @@ module.exports = (api, opts = {}) => {
 
   const plugins = {
     sfc: () => require('./lib/umi-plugin-vue-sfc'),
-    router: () => require('./lib/umi-plugin-vue-external'),
-    external: () => require('./lib/umi-plugin-vue-router'),
+    router: () => require('./lib/umi-plugin-vue-router'),
+    external: () => require('./lib/umi-plugin-vue-external'),
   }
 
   Object.keys(plugins).forEach(key => {
@@ -21,7 +21,7 @@ module.exports = (api, opts = {}) => {
       const pluginOptions = opts[key] === true
         ? opts[key]
         : {}
-      debug(`Enable ${id}`)
+      debug(`Enable ${id} with options ${JSON.stringify(pluginOptions)}`)
       api.registerPlugin({
         id,
         apply: plugins[key](),
