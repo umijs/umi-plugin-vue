@@ -1,6 +1,6 @@
 {
   "name": "umi-plugin-vue",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "A umi@2.x plugin for Vue.js",
   "repository": {
     "url": "ulivz/umi-plugin-vue",

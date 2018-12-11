@@ -1,3 +1,13 @@
+<a name="0.3.4"></a>
+## [0.3.4](https://github.com/ulivz/umi-plugin-vue/compare/v0.3.3...v0.3.4) (2018-12-11)
+
+
+### Bug Fixes
+
+* cannot ensure dir correctly ([e5eead4](https://github.com/ulivz/umi-plugin-vue/commit/e5eead4))
+
+
+
 <a name="0.3.3"></a>
 ## [0.3.3](https://github.com/ulivz/umi-plugin-vue/compare/v0.3.2...v0.3.3) (2018-12-10)
 
