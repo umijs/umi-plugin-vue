@@ -28,7 +28,8 @@
     "globby": "^8.0.1",
     "chokidar": "^2.0.4",
     "chalk": "^2.4.1",
-    "debug": "^4.1.0"
+    "debug": "^4.1.0",
+    "fs-extra": "^7.0.1"
   },
   "devDependencies": {
     "jest-cli": "^22.1.4",
