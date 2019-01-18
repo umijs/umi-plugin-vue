@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/ulivz/umi-plugin-vue/compare/v0.3.4...v0.4.0) (2019-01-18)
+
+
+### Features
+
+* using ‘modifyHTMLWithAST’ for external plugin ([9fbaf71](https://github.com/ulivz/umi-plugin-vue/commit/9fbaf71))
+
+
+
 <a name="0.3.4"></a>
 ## [0.3.4](https://github.com/ulivz/umi-plugin-vue/compare/v0.3.3...v0.3.4) (2018-12-11)
 
